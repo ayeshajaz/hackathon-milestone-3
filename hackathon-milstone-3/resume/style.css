@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: Arial, Helvetica, Sans-serif;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.resume-div{
+    width: 60%;
+    border: 2px solid black;
+}
+
+header{
+    width: 100%;
+    height: 170px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(240, 123, 131, 0.952);
+    margin-bottom: 30px;
+}
+
+.white{
+    color: white;
+}
+
+header img{
+    width: 150px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+}
+
+.content aside{
+    width: 30%;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    background-color: #f9f9f9
+}
+
+.contact,
+.education,
+.skill,
+.language{
+    margin-bottom: 30px;
+}
+
+.contact h2,
+.education h2,
+.skill h2,
+.language h2,
+.experience h2,
+.reference h2{
+    border-bottom: 2px solid #f07b83;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    color: rgba(240, 123, 131, 0.952);
+}
+.education{
+    line-height: 20px;
+}
+
+.skill ul{
+    margin-left: 18px;
+}
+
+.main-content{
+    width: 70%;
+    padding-left: 50px;
+    background-color: white;
+}
+
+ .experience-items{
+    margin-bottom: 48px;
+}
+
+.experience-items p{
+    margin-bottom: 5px;
+ }
+
+ .experience-items ul{
+    margin-left: 20px;
+}
+
+.btn-div{
+    width: 70%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.btn{
+    font-size: 18px;
+    font-weight: 600px;
+    padding: 10px 12px;
+    background-color: #f07b83;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    
+
+    &:hover{
+        background-color: #b23e46;
+    }
+
+    &:active{
+        transform: scale(0.95);
+    }
+}
+
+.hide{
+    display: none;
+}
+
+
+
+@media print{
+    .btn-div{
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    header img {
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width:900px){
+.content{
+    flex-direction: column;
+}
+
+aside , .main-content{
+    width: 100%;
+}
+}

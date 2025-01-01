@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Static Resume Builder</title>
+    </head>
+    <body>
+        <div class="resume-div">
+            <header>
+                <div>
+                    <h1 class="white"><span id="resName"></span></h1>
+                    <p class="white"><span id="resDesig"></span></p>
+                </div>
+                <img id="resImg" src="profile-pic.png" alt="Profile Picture" />
+            </header>
+            <div class="content">
+                <aside>
+                    <section id="cont" class="contact">
+                        <h2>Contact</h2>
+                        <p><strong>Phone</strong></p>
+                        <p><span id="resPhone"></span></p>
+                        <br />
+                        <p><strong>Email</strong></p>
+                        <p><span id="resEmail"></span></p>
+                        <br />
+                        <p><strong>Address</strong></p>
+                        <p><span id="resAdd"></span></p>
+                    </section>
+                    <section id="edu" class="education">
+                        <h2>Education</h2>
+                        <p><span id="resPass1"></span></p>
+                        <p><strong><span id="resDeg1"></span></strong></p>
+                        <p><span id="resInst1"></span></p>
+                        <br />
+                        <p><span id="resPass2"></span></p>
+                        <p><strong><span id="resDeg2"></span></strong></p>
+                        <p><span id="resInst2"></span></p>
+                    </section>
+                    <section id="exper" class="skill">
+                        <h2>Expertise</h2>
+                        <ul>
+                            <li><span id="resSkill1"></span></li>
+                            <li><span id="resSkill2"></span></li>
+                            <li><span id="resSkill3"></span></li>
+                        </ul>
+                    </section>
+                    <section id="lang" class="language">
+                        <h2>Language</h2>
+                        <p><span id="resLang1"></span></p>
+                        <p><span id="resLang2"></span></p>
+                    </section>
+                </aside>
+
+                <main class="main-content">
+                    <section id="exp" class="experience">
+                        <h2>Experience</h2>
+                        <div class="experience-items">
+                            <p><strong>Summmary</strong></p>
+                            <p><span id="resIntro">
+                                I am a passionate and self-driven web developer
+                                who started learning coding with a keen interest
+                                in creating meaningful digital experiences. I
+                                believe in continuous learning and am constantly
+                                working on improving my skills in web
+                                development. My journey began in 2023 with GIAIC
+                                where I started my web development course,
+                                focusing on modern tools and frameworks like
+                                TypeScript, Next.js, and React. Currently, I am
+                                deepening my understanding of Next.js, and
+                                looking forward to expanding my expertise into
+                                AI and Machine Learning in the future."
+                            </span>
+                            </p>
+                        </div>
+                        <br>
+                        <div class="experience-items">
+                            <p><span id="resStyear"></span></p>
+                            <p><strong><span id="resInst"></span></strong></p>
+                            <p><span id="resInfo">
+                                Started a web development course in 2023 through
+                                [GIAIC], where
+                                I am currently learning Next.js, with previous
+                                training in
+                                TypeScript. In addition, I have independently
+                                enhanced my web
+                                development skills through online resources like
+                                YouTube, where
+                                I have learned [HTML, CSS, JavaScript]. Although
+                                I do not have
+                                professional work experience yet, this
+                                combination of
+                                self-learning and formal training has helped me
+                                develop a solid
+                                understanding of modern web technologies.
+                            </span>
+                            </p>
+                        </div>
+                        <br>
+                          <div class="experience-items">
+                            <p><strong>Interests</strong></p>
+                            <ul>
+                                <li><strong id="resTitle1"></strong><span id="resDesc1"></span></li>
+                                <li><strong id="resTitle2"></strong><span id="resDesc2"></span></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="ref" class="reference">
+                        <h2>Reference</h2>
+                        <p>Available upon request</p>
+                    </section>
+                </main>
+            </div>
+        </div>
+
+        <div class="btn-div">
+            <button id="print_btn" class="btn">Print</button>
+        </div>
+        
+    </body>
+    <script src="resumeScript.js" defer></script>
+</html>
